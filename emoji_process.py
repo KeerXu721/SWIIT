@@ -29,7 +29,7 @@ def process_emoji(input_file: str, output_file: str):
             csv_writer = csv.writer(out_file)
             csv_writer.writerow(['ID', 'Comments'])
             csv_reader = csv.reader(f)
-            next(csv_reader)
+            # next(csv_reader)
             id = 0
             # ------- uncomment the following if you want only the dominate emoji in your output data ------ #
             # dominate_emoji = ':' + emoji_name + ':'
@@ -38,7 +38,7 @@ def process_emoji(input_file: str, output_file: str):
                 if len(item) == 0:  # skip empty lines
                     continue
                 item = item[0]
-                item_l = item.split(" ")
+                item_l = item.split()
                 # strip off the web link and twetter handle
                 comment_list = [i for i in item_l if "@" not in i and 'https' not in i]
                 comment = ' '.join(comment_list)
@@ -137,12 +137,13 @@ def pilot_annotation(num: int, input_file: str, annotation_file: str, left_annot
 if __name__ == '__main__':
     directory = 'Data/archive/'
     emojis = ['face_holding_back_tears(updated).csv', 'smiling_face_with_tear(updated).csv', 'loudly_crying_face(updated).csv']
-    for emoji in emojis:
-        pilot_annotation(100, f"{emoji}", f"(to_annotate){emoji}", f'(left){emoji}')
-    # process_emoji("Data/archive/face_holding_back_tears.csv", "face_holding_back_tears.csv")
-    # process_emoji("Data/archive/smiling_face_with_tear.csv", 'smiling_face_with_tear.csv')
-    # process_emoji("Data/archive/loudly_crying_face.csv", 'loudly_crying_face.csv')
+    # for emoji in emojis:
+    #     pilot_annotation(100, f"{emoji}", f"(to_annotate){emoji}", f'(left){emoji}')
+    process_emoji("Data/archive/face_holding_back_tears.csv", "face_holding_back_tears.csv")
+    process_emoji("Data/archive/smiling_face_with_tear.csv", 'smiling_face_with_tear.csv')
+    process_emoji("Data/archive/loudly_crying_face.csv", 'loudly_crying_face.csv')
 
+    ################## UNCOMMENT BELOW TO PROCESS THE WHOLE FOLDER ##########################
     # for filename in os.listdir(directory):
     #     emoji_name = filename.replace('.csv', '')
     #     process_emoji("Data/archive/" + filename, "Data/processed_data/" + filename, emoji_name)
