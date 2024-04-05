@@ -29,7 +29,7 @@ def process_emoji(input_file: str, output_file: str):
             csv_writer = csv.writer(out_file)
             csv_writer.writerow(['ID', 'Comments'])
             csv_reader = csv.reader(f)
-            # next(csv_reader)
+            next(csv_reader)
             id = 0
             # ------- uncomment the following if you want only the dominate emoji in your output data ------ #
             # dominate_emoji = ':' + emoji_name + ':'
@@ -93,6 +93,7 @@ def remove_html_tags(comment):
     clean_string = re.sub('&[^\s]*;', '', clean_string)
     return clean_string
 
+
 def pilot_annotation(num: int, input_file: str, annotation_file: str, left_annotation_file: str):
     '''
 
@@ -134,14 +135,28 @@ def pilot_annotation(num: int, input_file: str, annotation_file: str, left_annot
         csv_writer.writeheader()
         csv_writer.writerows(left_annotation)
 
+
+def get_left_tweets(input_file, list, output_file):
+    with open(input_file, 'r', encoding='utf-8') as f:
+        with open(output_file, 'w', newline='', encoding='utf-8') as out_file:
+            csv_writer = csv.writer(out_file)
+            csv_writer.writerow(['ID', 'Comments'])
+            csv_reader = csv.reader(f)
+            next(csv_reader)
+            for item in csv_reader:
+                if item[0] not in list:
+                    csv_writer.writerow([item[0], item[1]])
+
+
 if __name__ == '__main__':
     directory = 'Data/archive/'
-    emojis = ['face_holding_back_tears(updated).csv', 'smiling_face_with_tear(updated).csv', 'loudly_crying_face(updated).csv']
+    emojis = ['face_holding_back_tears(updated).csv', 'smiling_face_with_tear(updated).csv',
+              'loudly_crying_face(updated).csv']
     # for emoji in emojis:
     #     pilot_annotation(100, f"{emoji}", f"(to_annotate){emoji}", f'(left){emoji}')
-    process_emoji("Data/archive/face_holding_back_tears.csv", "face_holding_back_tears.csv")
-    process_emoji("Data/archive/smiling_face_with_tear.csv", 'smiling_face_with_tear.csv')
-    process_emoji("Data/archive/loudly_crying_face.csv", 'loudly_crying_face.csv')
+    # process_emoji("Data/archive/face_holding_back_tears.csv", "face_holding_back_tears.csv")
+    # process_emoji("Data/archive/smiling_face_with_tear.csv", 'smiling_face_with_tear.csv')
+    # process_emoji("Data/archive/loudly_crying_face.csv", 'loudly_crying_face.csv')
 
     ################## UNCOMMENT BELOW TO PROCESS THE WHOLE FOLDER ##########################
     # for filename in os.listdir(directory):
