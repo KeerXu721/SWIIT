@@ -21,5 +21,10 @@ This folder contains 8 files:
 8. **swit_files.zip**, a zipped folder containing data and configuration files to be annotated and opened in BRAT.
 
 ### Instructions for annotators
-Please download **swit_files.zip** and follow the instructions outlined in **SWiT Emoji Sentiment Brat Setup & Tutorial (External).pdf**.
-During the annotation process, please refer to **Annotation guidelines v2.pdf** and reach out to us with any questions.
+Please download **swit_files.zip** and follow the instructions outlined in
+**SWiT Emoji Sentiment Brat Setup & Tutorial (External).pdf**. During the annotation process, please refer to
+**Annotation guidelines v2.pdf** and reach out to us with any questions.
+
+If you would like to access these documents on Google Docs, you can find the links below:
+* [SWiT Emoji Sentiment Brat Setup & Tutorial (External)](https://docs.google.com/document/d/1i1rDM1SpTKDrYlRSehMHeAcm__Ph2wM4MVowN1pWvdc/edit?usp=sharing)
+* [Annotation guidelines v2](https://docs.google.com/document/d/1fGMEWfhTian-0fDZOx7am2xDAyuLTEfL1RAUE2G7kUc/edit?usp=sharing)
