@@ -1,0 +1,7 @@
+Thought I'd write a quick script to scrape some wallet addresses, it worked 
+
+Figured I'd "quickly" add an easy extra step to automate the process more
+
+It's 4 hours later and I did not add the easy extra step 😭 😭 😭
+
+Coding sucks, GN 👋

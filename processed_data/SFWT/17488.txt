@@ -1,0 +1,9 @@
+Agoy 🥲
+
+Test results for bern_nase01
+🔴 Search Suggestion Ban
+🔴 Search Ban
+🟢 No Ghost Ban
+🟢 No Reply Deboosting
+
+Twitter Shadowban Test (by HiSubway)

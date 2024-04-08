@@ -1,0 +1,7 @@
+It does suck 🥲
+
+I have considered all of those options (and more 🥹).
+
+The user-provided keys wouldn't work for Birdy. Even if all the users brought their $100/M API keys, the 10K tweet cap would be far from sufficient.
+
+As for a Chrome extension, it could be a solution, but…

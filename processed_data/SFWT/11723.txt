@@ -1,0 +1,3 @@
+program doesn't support the Token 2022 program 🥲
+
+Today I tried to create a metadata account for a "non-transferable" mint that was initialized with the Token2022, but unfortunately, this👇assertion broke my plan.

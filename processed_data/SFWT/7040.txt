@@ -1,0 +1,1 @@
+If it shows an error 403 on page load , just know I have reached my API limit 🥲

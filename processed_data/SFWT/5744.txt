@@ -1,0 +1,3 @@
+Is it just me or does Blender 3.5's Eevee engine render hella faster than 3.4 and prior? I remember running a scene with volumetric lighting in 3.3 and watching my video card gag under all the noise & lag. 
+
+3.5's realtime render preview has far less noise and runs smooth af 🥲

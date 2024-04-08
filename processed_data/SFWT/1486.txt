@@ -1,0 +1,1 @@
+Was fixing Linux boot issue on a dual boot laptop. Ended up messing with Windows partition 🥲

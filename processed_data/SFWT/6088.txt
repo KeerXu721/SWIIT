@@ -1,0 +1,5 @@
+Made it so that only red bullets are counterable. I might lead to some interesting pattern designs!
+That is, assuming I'm smart enough to design them without much experience 🥲
+Slow development but i'm having a lot of fun!
+
+#screenshotsaturday #gamedev #shmups #STG #gamemaker

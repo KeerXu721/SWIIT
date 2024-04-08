@@ -1,0 +1,1 @@
+That's an wow! But I already implemented a complex file upload system with S3 signed URLs 🥲

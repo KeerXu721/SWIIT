@@ -1,0 +1,1 @@
+For that email, it's not validating with proper RegEx validation. I just used includes("but that name field🚶🥲

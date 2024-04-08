@@ -1,0 +1,2 @@
+ok, i think, this problem can be solved by using while loop?
+i'm not sure tho 🥲
