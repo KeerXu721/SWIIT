@@ -1,0 +1,9 @@
+2/ To use the dashboard:
+
+- Log in
+- Input the `trader_address` (MM order creator)
+- Select `date_start` and `date_end`
+- Select the date aggregation using the `date_trunc` field
+- Apply all parameters
+
+Note: The default trader address is not me 🥲.

@@ -1,0 +1,1 @@
+In big projects, how many `checkState()` methods we will see? 🥲 `normalizeState()` also sounds good.

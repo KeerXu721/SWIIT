@@ -1,0 +1,1 @@
+ok, I'm trying to build a chatbot using gpt and using text scraped from the ifrs standard on smes. but running up against a token limit. My incredibly poor python skills have me up against a wall 🥲

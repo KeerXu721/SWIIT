@@ -1,0 +1,1 @@
+Tx on scroll wasn’t this slow before. Why do I have a waiting time of 2hrs+🥲

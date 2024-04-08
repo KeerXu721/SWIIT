@@ -1,0 +1,4 @@
+oh but if a pic is missing, it fails the build hard
+wonderful, makes a lot of sense.. I guess?
+
+this theme looks nice, but it has an outstanding amount of issues to be debugged every now and then 🥲

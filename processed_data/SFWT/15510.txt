@@ -1,0 +1,1 @@
+GetX is amazing package, I like it , but it’s not companies friendly 🥲 so I needed to learn Riverpod, and soon I will learn Bloc also

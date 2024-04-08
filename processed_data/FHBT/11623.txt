@@ -1,0 +1,4 @@
+Nice segue
+In 9-5land my team does a lot of mock ups. I'll check this out! Thanks for sharing
+
+Regarding snaps, it was more a dig at their architecture. To install a small app they create a virtual drive structure and busy up the fstab 😖 I get why they do it but I like it not 🥹
