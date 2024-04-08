@@ -9,6 +9,15 @@ guidelines following the MAMA (Model-Annotate-Model-Annotate) cycle, retrieve an
 annotation, report inter-annotator agreement, train a model on our annotated dataset, and write a paper and present
 the process of the project throughout the semester.
 
+For our project, we are observing the sentiment of three emojis that can be found in both positive and negative
+contexts:
+1. 🥹 - face holding back tears (FHBT)
+2. 😭 - loudly crying face (LCF)
+3. 🥲 - smiling face with tear (SFWT)
+
+More information, including the motivation for this project, can be found in our annotation guidelines.
+
+### Contents of this folder
 This folder contains 8 files:
 
 1. This **README** file.
