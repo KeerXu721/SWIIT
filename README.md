@@ -18,18 +18,19 @@ contexts:
 More information, including the motivation for this project, can be found in our annotation guidelines.
 
 ### Contents of this folder
-This folder contains 8 files:
+This folder contains 9 files:
 
 1. This **README** file.
-2. **Scripts**, a folder containing .py scripts used to create the files for this project.
-3. **old_data**, a folder containing old data used for internal annotation.
+2. **annotated_data**, a folder containing annotated data collected internally and externally.
+3. **old_files**, a folder containing old files used for internal annotation.
 4. **original_data**, a folder containing the original datasets from [Kaggle](https://www.kaggle.com/datasets/ericwang1011/tweets-with-emoji).
 5. **processed_data**, a folder containing the pre-processed dataset, where the data is presented in .csv format and in folders of .txt files.
-6. **Annotation guidelines v2.pdf**, a document outlining our goals, the classification task, and the annotation guidelines for our task.
-7. **SWiT Emoji Sentiment Brat Setup & Tutorial (External).pdf**, a document containing the instructions for setup and annotating in BRAT.
-8. **swit_files.zip**, a zipped folder containing data and configuration files to be annotated and opened in BRAT.
+6. **scripts**, a folder containing .py scripts used to create the files for this project.
+7. **Annotation guidelines v2.pdf**, a document outlining our goals, the classification task, and the annotation guidelines for our task.
+8. **SWiT Emoji Sentiment Brat Setup & Tutorial (External).pdf**, a document containing the instructions for setup and annotating in BRAT.
+9. **swit_files.zip**, a zipped folder containing data and configuration files to be annotated and opened in BRAT.
 
-### Instructions for annotators
+### Instructions for external annotators
 Please download **swit_files.zip** and follow the instructions outlined in
 **SWiT Emoji Sentiment Brat Setup & Tutorial (External).pdf**. During the annotation process, please refer to
 **Annotation guidelines v2.pdf** and reach out to us with any questions.

@@ -1,0 +1,21 @@
+T1	Emoji 7 8	🥲
+T2	Emoji 9 11	😭😭
+T3	Emoji 12 13	🥲
+T4	Emoji 25 26	🥲
+T5	Emoji 27 28	🥲
+T6	Emoji 29 30	🥲
+T7	Emoji 32 33	🥲
+T8	Emoji 36 37	😭
+T9	Emoji 38 39	😭
+T10	Emoji 42 43	🥲
+A1	Sentiment T1 Unconfident
+A2	Sentiment T2 Unconfident
+A3	Sentiment T3 Unconfident
+A4	Sentiment T4 Unconfident
+A5	Sentiment T5 Unconfident
+A6	Sentiment T6 Unconfident
+A7	Sentiment T7 Unconfident
+#1	AnnotatorNotes T7	this is freaking excessive man
+A8	Sentiment T8 Unconfident
+A9	Sentiment T9 Unconfident
+A10	Sentiment T10 Unconfident
