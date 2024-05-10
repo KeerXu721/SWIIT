@@ -1,0 +1,6 @@
+T1	Emoji 104 105	🥹
+T2	Emoji 112 113	😭
+A1	Sentiment T1 Negative
+A2	Sentiment T2 Negative
+#1	AnnotatorNotes T1	sarcasm
+#2	AnnotatorNotes T2	sarcasm

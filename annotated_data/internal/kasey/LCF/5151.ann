@@ -1,0 +1,6 @@
+T1	Emoji 48 49	😭
+T2	Emoji 58 60	😭😭
+A1	Sentiment T1 Negative
+#1	AnnotatorNotes T1	sadness
+A2	Sentiment T2 Negative
+#2	AnnotatorNotes T2	sadness

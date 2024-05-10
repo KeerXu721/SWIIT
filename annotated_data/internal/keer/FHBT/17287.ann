@@ -1,0 +1,6 @@
+T1	Emoji 6 7	🥹
+T2	Emoji 7 10	😭😭😭
+T3	Emoji 61 63	😭😭
+A1	Sentiment T1 Negative
+A2	Sentiment T2 Negative
+A3	Sentiment T3 Negative
