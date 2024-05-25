@@ -12,12 +12,8 @@ def batching(directory: str, emoji: str):
     :param directory: a directory containing txt and ann files per emoji type
     :param emoji: the name of the emoji
     """
-    # create new directory to hold emoji folders it does not already exist
-    if not os.path.exists("swit_files"):
-        os.mkdir("swit_files")
-
     # create new directory to hold batches per emoji it does not already exist
-    dir_name = os.path.join("swit_files", emoji)
+    dir_name = os.path.join(os.path.join(os.path.pardir, "swit_files", emoji))
     if not os.path.exists(dir_name):
         os.mkdir(dir_name)
 
@@ -25,7 +21,7 @@ def batching(directory: str, emoji: str):
     batch_idx = 0
 
     # retrieve text files from the original directory and randomly select 5000 files
-    files = os.listdir(directory)
+    files = os.listdir(os.path.join(os.path.pardir, "processed_data", emoji_name))
     text_files = [file for file in files if file[-4:] == ".txt"]
     random_files = rand.sample(text_files, 5000)
 
@@ -53,5 +49,5 @@ def batching(directory: str, emoji: str):
 
 emoji_names = ["FHBT", "LCF", "SFWT"]
 for emoji_name in emoji_names:
-    directory_name = os.path.join("all_files", emoji_name)
+    directory_name = os.path.join(os.path.pardir, "processed_data", emoji_name)
     batching(directory_name, emoji_name)

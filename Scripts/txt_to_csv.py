@@ -32,6 +32,9 @@ def txt_to_csv(directory: str, annotator: str):
                         writer.writerow({'id': idx, 'text': text})
 
 
-directory_name = os.path.join(os.path.pardir, "annotated_data", "external")
+# can add "internal" or "external" if compiling annotated data from different groups of annotators
+# directory_name = os.path.join(os.path.pardir, "annotated_data", "internal")
+
+directory_name = os.path.join(os.path.pardir, "annotated_data")
 for annotator_name in os.listdir(os.path.join(directory_name)):
     txt_to_csv(directory_name, annotator_name)

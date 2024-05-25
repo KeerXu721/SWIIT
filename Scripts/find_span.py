@@ -11,11 +11,11 @@ def find_span(directory: str, input_txt: str):
     :param input_txt: a txt file containing a tweet
     """
     # create new directory to hold csv files containing emoji spans if it does not already exist
-    if not os.path.exists("spans"):
-        os.mkdir("spans")
+    if not os.path.exists(os.path.join(os.path.dirname(directory), "spans")):
+        os.mkdir(os.path.join(os.path.dirname(directory), "spans"))
 
     # get name of the csv file
-    file_name = os.path.join("spans", os.path.basename(directory) + '.csv')
+    file_name = os.path.join(os.path.dirname(directory), "spans", os.path.basename(directory) + '.csv')
 
     # open csv file in append mode
     with open(file_name, 'a', newline='', encoding="utf-8") as csvfile:
@@ -34,6 +34,6 @@ def find_span(directory: str, input_txt: str):
 
 emoji_names = ["FHBT", "LCF", "SFWT"]
 for emoji_name in emoji_names:
-    directory_name = os.path.join("data", emoji_name)
+    directory_name = os.path.join(os.path.pardir, "processed_data", emoji_name)
     for file in os.listdir(directory_name):
         find_span(directory_name, file)
