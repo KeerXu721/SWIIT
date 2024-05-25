@@ -12,17 +12,6 @@ def csv_to_ann(directory: str, input_csv: str):
     """
     with open(os.path.join(directory, input_csv), newline='', encoding="utf-8") as csvfile:
 
-        # # create new directory to hold ann file directories if it does not already exist
-        # if not os.path.exists("ann_files"):
-        #     os.mkdir("ann_files")
-        #
-        # # get directory name
-        # new_dir = os.path.join("ann_files", input_csv[:-4])
-        #
-        # # create new directory to hold ann files per emoji if it does not already exist
-        # if not os.path.exists(new_dir):
-        #     os.mkdir(new_dir)
-
         # get directory name
         new_dir = os.path.join(os.path.dirname(directory), input_csv[:-4])
 
