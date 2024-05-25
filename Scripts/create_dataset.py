@@ -14,7 +14,7 @@ def create_dataset(directory: str, input_csv: str):
     emojis = {"face_holding_back_tears": "FHBT", "loudly_crying_face": "LCF", "smiling_face_with_tear": "SFWT"}
 
     # get name of the csv file to save preprocessed data to
-    file_name = os.path.join(directory, emojis[input_csv[:-4]] + '.csv')
+    file_name = os.path.join(os.path.pardir, "processed_data", emojis[input_csv[:-4]] + '.csv')
 
     # open csv file in append mode
     with (open(file_name, 'a', newline='', encoding="utf-8") as csvfile):
@@ -42,6 +42,6 @@ def create_dataset(directory: str, input_csv: str):
                     idx += 1
 
 
-directory_name = os.path.join("full_data")
+directory_name = os.path.join(os.path.pardir, "original_data")
 for file in os.listdir(directory_name):
     create_dataset(directory_name, file)

@@ -98,7 +98,9 @@ def get_comment(span: str, comments: list) -> str:
     return ""
 
 
-# change "internal" to "external" when compiling annotated data from external annotators
-directory_name = os.path.join(os.path.pardir, "annotated_data", "external")
-for annotator_name in os.listdir(os.path.join(directory_name)):
+# can add "internal" or "external" if compiling annotated data from different groups of annotators
+# directory_name = os.path.join(os.path.pardir, "annotated_data", "internal")
+
+directory_name = os.path.join(os.path.pardir, "annotated_data")
+for annotator_name in os.listdir(directory_name):
     ann_to_csv(directory_name, annotator_name)

@@ -32,6 +32,6 @@ def csv_to_txt(directory: str, input_csv: str):
                 output.write(comment)
 
 
-directory_name = 'data'
+directory_name = os.path.join(os.path.pardir, 'processed_data')
 for file in os.listdir(directory_name):
     csv_to_txt(directory_name, file)
